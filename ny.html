@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+<style type="text/css">
+	
+
+	#bungkus{
+		width: auto;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+
+	.box{
+			display: flex;
+			height: 300px;
+			width: 600px;
+			grid-gap: 1rem;
+
+
+			
+
+		}
+
+		.bg{
+			background: url(img/1.jpg);
+		}
+
+		.bg2{
+			background: url(img/2.jpg);
+		}
+
+		.bg3{
+			background: url(img/3.jpg);
+		}
+
+		.bg4{
+			background: url(img/4.jpg);
+		}
+
+		.bg5{
+			background: url(img/5.jpg);
+		}
+
+		.box >div {
+			flex: 1;
+			border-radius: 3rem;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto 100%;
+			transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+			filter: grayscale(1);
+
+
+		}
+		.box > div:hover{
+			flex: 4;
+			filter: grayscale(0);
+			border-radius: 2rem;
+		}
+
+		.text{
+			
+			width: 300px;
+			height: auto;
+			position: fixed;
+			justify-content: center;
+			align-items: center;
+			margin-top: 75%;
+		}
+
+		iframe{
+			opacity: 0;
+		}
+
+		h2{
+			position: relative;
+			color: white;
+	
+
+		}
+		h2:before{
+			content:"Have a Great Day <3";
+			position: absolute;
+			width: 0;
+			height: 100%;
+			overflow: hidden;
+			color: lightblue;
+			border-right: 8px solid lightblue;
+			transition: 1s ease-in-out;
+			margin-left: 60px;
+
+
+		}
+		h2:hover:before
+		{
+			width: 100%;
+			filter: drop-shadow(0 0 25px lightblue);
+		}
+
+		p
+		{
+			text-align: center;
+		}
+
+		@media screen and (max-width: 480px){
+			.bungkus {
+				flex-direction: column;
+			}
+			.bungkus div {
+				font-size: 2rem;
+		}
+
+
+
+		
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+
+<div id="bungkus">
+	
+
+	<div class="box">
+		
+		<div class="bg"></div>
+		<div class="bg2"></div>
+		<div class="bg3"></div>
+		<div class="bg4"></div>
+		<div class="bg5"></div>
+
+
+	</div>
+
+		<div class="text">
+		<p>Hai Yeni !!</p>
+		<h2>"Have a Great Day <3"</h2>
+		<p>".....disini aku mau ngucap terima kasih atas selama ini, aku senang berkenalan denganmu sampai akrab seperti ini, aku tau "orang orang akan datang dan pergi", tapi aku berharap kita bisa terus bertukar cerita satu sama lain kedepannya. jaga kesehatan ya! kurangin begadang, juga kalo ada tugas kerjakan lebih awal dan jangan kebanyakan makan, katanya mau diet! jika beruntung, kita akan bertemu satu saat nanti.  <br> 사랑해요. <3</p>
+
+		<iframe width="50" height="50" src="https://www.youtube.com/embed/SctrVF37GAQ?autoplay=1&start=99" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+	</div>
+
+	
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
